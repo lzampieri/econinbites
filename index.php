@@ -5,7 +5,7 @@ require_once("utilities.php");
 
 <div class="row my-5">
     <img src="copertina.png" class="col-md-6 ml-auto" alt="copertina" />
-    <h1 class="sansserif mr-auto mt-auto mb-auto greenbrown">economist<br/>society</h1>
+    <h1 class="sansserif ml-auto mr-2 ml-md-0 mr-md-auto mt-auto mb-auto greenbrown">economist<br/>society</h1>
 </div>
 
 <div class="row my-5">
