@@ -30,6 +30,10 @@ HTML;
     ?>
 </div>
 
+<div class="row">
+    <img src="rotating.gif" class="col-1 mx-auto" />
+</div>
+
 <hr/>
 <a href="https://www.instagram.com/econ.in.bites/" class="sansserif greenbrown mr-auto">
     <img src="instagram.png" class="col-3 col-md-1" alt="instagram" />econ.in.bites
