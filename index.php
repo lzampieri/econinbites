@@ -9,7 +9,7 @@ require_once("utilities.php");
 </div>
 
 <div class="row my-5">
-    <img src="scomposto_largherrimo.png" class="col-3 mx-auto" />
+    <img src="scomposto_largherrimo.png" class="col-8 col-md-3 mx-auto" />
 </div>
 
 <h2 class="sansserif brownbrown">Bites</h2>
@@ -31,7 +31,7 @@ HTML;
 </div>
 
 <div class="row">
-    <img src="rotating.gif" class="col-1 mx-auto" />
+    <img src="rotating.gif" class="col-3 col-md-1 mx-auto" />
 </div>
 
 <hr/>
