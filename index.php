@@ -14,12 +14,13 @@ require_once("utilities.php");
 
 <h2 class="sansserif brownbrown">Bites</h2>
     <?php
-    $bites = query("SELECT * FROM bites");
+    $bites = query("SELECT * FROM bites ORDER BY ID DESC");
     while( $bite = mysqli_fetch_assoc($bites) ) {
         if( $bite['Visible'] )
             echo <<<HTML
             <div class="row my-5">
-                <img src="fava.png" class="col-3 col-md-2" alt="fava" /><div class="mr-auto">
+                <img src="fava.png" class="col-3 col-md-2 mb-auto" alt="fava" />
+                <div class="mr-auto col-md-7">
                     <h2 class="sansserif greenbrown">{$bite['Title']}</h2>
                     {$bite['Text']}
                 </div>
