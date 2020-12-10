@@ -24,6 +24,13 @@ $tables = array(
         "Title" => "Titolo",
         "Text" => "Testo^",
         "Visible" => "Visibile? (0/1)"
+    ), "chisiamo" => array(
+        "__name" => "Righe per Chi Siamo",
+        "__unique" => "ID",
+        "__insert_query" => "INSERT INTO chisiamo (Title, Text) VALUES ('Titolo','Testo')",
+        "Title" => "Titolo",
+        "Text" => "Testo^",
+        "Visible" => "Visibile? (0/1)"
     )
 );
 ?>

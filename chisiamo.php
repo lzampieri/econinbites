@@ -12,9 +12,9 @@ require_once("utilities.php");
     <img src="scomposto_largherrimo.png" class="col-8 col-md-3 mx-auto" />
 </div>
 
-<h2 class="sansserif brownbrown">Bites</h2>
+<h2 class="sansserif brownbrown">Ciao!</h2>
     <?php
-    $bites = query("SELECT * FROM bites WHERE Visible = 1 ORDER BY ID DESC");
+    $bites = query("SELECT * FROM chisiamo WHERE Visible = 1 ORDER BY ID ASC");
     $nl2br = 'nl2br';
     $strtolower = 'strtolower';
     while( $bite = mysqli_fetch_assoc($bites) ) {

@@ -12,24 +12,15 @@ require_once("utilities.php");
     <img src="scomposto_largherrimo.png" class="col-8 col-md-3 mx-auto" />
 </div>
 
-<h2 class="sansserif brownbrown">Bites</h2>
-    <?php
-    $bites = query("SELECT * FROM bites WHERE Visible = 1 ORDER BY ID DESC");
-    $nl2br = 'nl2br';
-    $strtolower = 'strtolower';
-    while( $bite = mysqli_fetch_assoc($bites) ) {
-        if( $bite['Visible'] )
-            echo <<<HTML
-            <div class="row my-5">
-                <img src="fava.png" class="col-3 col-md-2 mb-auto" alt="fava" />
-                <div class="mr-auto col-md-7">
-                    <h2 class="sansserif greenbrown">{$strtolower($bite['Title'])}</h2>
-                    {$nl2br($bite['Text'])}
-                </div>
-            </div>
-HTML;
-    }
-    ?>
+<h2 class="sansserif brownbrown">Seguici!</h2>
+    <div class="row my-5">
+        <img src="instagram.png" class="col-3 col-md-2 mb-auto" alt="instagram" />
+        <div class="mr-auto col-md-7">
+            <a href="https://www.instagram.com/econ.in.bites/">
+            <h2 class="sansserif greenbrown">abitiamo su instagram</h2>
+            </a>
+        </div>
+    </div>
 </div>
 
 <div class="row">
