@@ -15,6 +15,7 @@ require_once("utilities.php");
 <h2 class="sansserif brownbrown">Bites</h2>
     <?php
     $bites = query("SELECT * FROM bites ORDER BY ID DESC");
+    $nl2br = 'nl2br';
     while( $bite = mysqli_fetch_assoc($bites) ) {
         if( $bite['Visible'] )
             echo <<<HTML
@@ -22,7 +23,7 @@ require_once("utilities.php");
                 <img src="fava.png" class="col-3 col-md-2 mb-auto" alt="fava" />
                 <div class="mr-auto col-md-7">
                     <h2 class="sansserif greenbrown">{$bite['Title']}</h2>
-                    {$bite['Text']}
+                    {$nl2br($bite['Text'])}
                 </div>
             </div>
 HTML;
