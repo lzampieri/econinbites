@@ -18,6 +18,7 @@ $tables = array(
     "bites" => array(
         "__name" => "Bites",
         "__unique" => "ID",
+        "__insert_query" => "INSERT INTO bites (Title, Text) VALUES ('Titolo','Testo')",
         "Title" => "Titolo",
         "Text" => "Testo",
         "Visible" => "Visibile? (0/1)"
