@@ -31,6 +31,11 @@ $tables = array(
         "Title" => "Titolo",
         "Text" => "Testo^",
         "Visible" => "Visibile? (0/1)"
+    ), "home_settings" => array(
+        "__name" => "Impostazioni pagina iniziale",
+        "__unique" => "ID",
+        "Chiave" => "Impostazione",
+        "Valore" => "Valore^"
     )
 );
 ?>
