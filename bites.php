@@ -20,7 +20,7 @@ require_once("utilities.php");
     while( $bite = mysqli_fetch_assoc($bites) ) {
         if( $bite['Visible'] )
             echo <<<HTML
-            <div class="row my-5">
+            <div class="row my-5" id="bite{$bite['ID']}">
                 <img src="fava.png" class="col-3 col-md-2 mb-auto" alt="fava" />
                 <div class="mr-auto col-md-7">
                     <h2 class="sansserif greenbrown">{$strtolower($bite['Title'])}</h2>
