@@ -12,9 +12,9 @@ require_once("utilities.php");
     <img src="scomposto_largherrimo.png" class="col-8 col-md-3 mx-auto" />
 </div>
 
-<h2 class="sansserif brownbrown">Bites</h2>
+<h2 class="sansserif brownbrown">ultimi bites</h2>
     <?php
-    $bites = query("SELECT * FROM bites WHERE Visible = 1 ORDER BY ID DESC");
+    $bites = query("SELECT * FROM bites WHERE Visible = 1 ORDER BY ID DESC LIMIT 3");
     $nl2br = 'nl2br';
     $strtolower = 'strtolower';
     while( $bite = mysqli_fetch_assoc($bites) ) {
@@ -30,17 +30,13 @@ require_once("utilities.php");
 HTML;
     }
     ?>
+    <a href="bites.php" class="row"><h3 class="mx-auto sansserif greenbrown">vedi tutti</h3></a>
 </div>
 
 <div class="row">
     <img src="rotating.gif" class="col-3 col-md-1 mx-auto" />
 </div>
 
-<hr/>
-<a href="https://www.instagram.com/econ.in.bites/" class="sansserif greenbrown mr-auto">
-    <img src="instagram.png" class="col-3 col-md-1" alt="instagram" />econ.in.bites
-</a>
-<div class="row"><a href="easy_cms/" class="ml-auto"><i class="fas fa-lock greenbrown"></i></a><div>
 <?php
 require("footer.php");
 ?>

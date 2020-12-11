@@ -12,7 +12,7 @@ require_once("utilities.php");
     <img src="scomposto_largherrimo.png" class="col-8 col-md-3 mx-auto" />
 </div>
 
-<h2 class="sansserif brownbrown">Seguici!</h2>
+<h2 class="sansserif brownbrown">seguici!</h2>
     <div class="row my-5">
         <img src="instagram.png" class="col-3 col-md-2 mb-auto" alt="instagram" />
         <div class="mr-auto col-md-7">
@@ -27,11 +27,6 @@ require_once("utilities.php");
     <img src="rotating.gif" class="col-3 col-md-1 mx-auto" />
 </div>
 
-<hr/>
-<a href="https://www.instagram.com/econ.in.bites/" class="sansserif greenbrown mr-auto">
-    <img src="instagram.png" class="col-3 col-md-1" alt="instagram" />econ.in.bites
-</a>
-<div class="row"><a href="easy_cms/" class="ml-auto"><i class="fas fa-lock greenbrown"></i></a><div>
 <?php
 require("footer.php");
 ?>

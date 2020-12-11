@@ -40,8 +40,8 @@
 function navbar_item($url, $name) {
   $active = ( strpos($_SERVER['REQUEST_URI'], $url) === false ? "" : "active");
   echo <<<HTML
-  <li class="nav-item {$active} mr-3">
-    <a class="nav-link sansserif brownbrown" href="{$url}">{$name}</a>
+  <li class="nav-item mr-3">
+    <a class="nav-link sansserif brownbrown {$active}" href="{$url}">{$name}</a>
   </li>
 HTML;
 }
@@ -58,6 +58,7 @@ HTML;
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-5 mr-auto">
       <?php
+      navbar_item("bites.php","Bites");
       navbar_item("chisiamo.php","Chi siamo");
       navbar_item("contatti.php","Contatti");
       ?>

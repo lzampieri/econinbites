@@ -15,6 +15,6 @@
 .greenbrown {
     color: var(--green) !important;
 }
-.greenbrown:hover, .brownbrown:hover {
+.greenbrown:hover, .brownbrown:hover, .greenbrown.active, .brownbrown.active {
     color: var(--brown) !important;
 }
